@@ -43,7 +43,7 @@ def check_days_remaining(cert):
     """
     Checks the number of days of validity remaining for the given certificate
 
-    :param cert: A certificate is x509 format
+    :param cert: A certificate in x509 format
     :return: The number of days of validity remaining for the given certificate
     """
     current_date_time = datetime.now()
@@ -70,7 +70,7 @@ def retrieve_cert_details(cert):
 
 def sendgrid_email_alert(cert_details, recipient, sendgrid_api_key):
     """
-    Sends an email to a recipient
+    Sends an email to a recipient via the Sendgrid API
 
     :param cert_details: A dict containing some key details of the certificate that is due to expire soon
     :param recipient: The email address to which the notification should be sent
