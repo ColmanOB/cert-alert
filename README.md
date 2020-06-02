@@ -1,6 +1,8 @@
 # cert-alert
 A python program to check the SSL / TLS cert for a list of sites, and warn of any that are due to expire soon.
 
+Alerts are sent by email via Sendgrid using their API, so this program requires a Sendgrid account in order to work.
+
 The application reads its config / settings from a YAML file in the below format:
 
 ````
