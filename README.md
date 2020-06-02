@@ -1,10 +1,10 @@
-# cert-detective
+# cert-alert
 A python program to check the SSL / TLS cert for a list of sites, and warn of any that are due to expire soon.
 
 The application reads its config / settings from a YAML file in the below format:
 
 ````
-# Configuration for the ssl-inspector application
+# Configuration for the cert-alert application
 #
 # All URLs and port numbers to be checked must be listed below, using the exact format:
 #
